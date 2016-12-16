@@ -69,8 +69,7 @@
         }
       }
       if (typeof consoleUrl !== "undefined") {
-        var newTab = window.open(consoleUrl, '_blank');
-        newTab.focus();
+        window.location.href = consoleUrl;
       } else {
         alert("No UserSnap Console detected on current page. " +
           "This only works if you're on a UserSnap page with a user console");
