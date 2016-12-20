@@ -2,6 +2,9 @@
 This repo contains a set of bookmarklets to help make the workflow at TT a bit
 smoother and easier.
 
+##### Demo
+To see a working version of this visit http://ganeshnrao.com/tt/
+
 ##### How it works
 * `index.html` is the page from where people can drag the bookmarklets to their
 Bookmarks bar. This page uses `main.js` to generate the encoded URI links
