@@ -94,7 +94,7 @@
       this.fetchUrlById({
         message: "Enter JIRA Number or ID",
         regEx: /[0-9]+$/i,
-        urlTemplate: "https://tradingtech.atlassian.net/browse/DEB-{{0}}"
+        urlTemplate: "https://jira.tradingtechnologies.com/browse/DEB-{{0}}"
       });
     };
 
