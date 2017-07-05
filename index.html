@@ -1,45 +1,55 @@
 <html>
-  <head>
+<head>
     <title>TT Bookmarklets</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
+</head>
+<body>
+<div class="container">
+    <div class="header">
         <h3>TT Bookmarklets</h3>
         <p>Just <strong>drag</strong> these buttons to your bookmarks bar</p>
-      </div>
-      <ul id="bookmarklets"></ul>
-      <div class="footer">
-        <p>
-          <a id="view-source" href="#">View the Javascript source file</a><br />
-          <a href="https://github.com/ganeshnrao/tt-bookmarklets">View on GitHub</a>
-        </p>
-      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-      window.ttBookmarkletsSettings = {
-        bookmarklets: [{
-          // name: "Get JIRA", // Optional
-          description: "Go to any specific JIRA",
-          methodName: "getJira"
-        }, {
-          description: "Go to any specific UserSnap",
-          methodName: "getUserSnap"
-        }, {
-          description: "Opens UserSnap's console in a new tab",
-          methodName: "openUserConsole"
-        }, {
-          description: "Find all branches on TT GitHub matching a JIRA ID",
-          methodName: "searchBranch"
-        }]
-      };
-    </script>
-    <script
-      id="bookmarklets-script-file"
-      src="https://rawgit.com/ganeshnrao/tt-bookmarklets/master/ttBookmarklets.js">
-    </script>
-    <script src="main.js"></script>
-  </body>
+    <ul id="bookmarklets"></ul>
+    <div class="footer">
+        <p>
+            <a id="view-source" href="#">View the Javascript source file</a><br/>
+            <a href="https://github.com/ganeshnrao/tt-bookmarklets">View on GitHub</a>
+        </p>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    window.ttBookmarkletsSettings = {
+        bookmarklets: [
+            {
+                // name: "Get JIRA", // Optional
+                description: 'Go to any specific JIRA',
+                methodName: 'getJira'
+            },
+            {
+                description: 'Go to any specific UserSnap',
+                methodName: 'getUserSnap'
+            },
+            {
+                description: 'Opens UserSnap\'s console in a new tab',
+                methodName: 'openUserConsole'
+            },
+            {
+                description: 'Find all branches on TT GitHub matching a JIRA ID',
+                methodName: 'searchBranch'
+            },
+            {
+                description: 'Copy all Commit ID hashes on this page',
+                methodName: 'copyCommitIds',
+                raw: true
+            }
+        ]
+    };
+</script>
+<script
+        id="bookmarklets-script-file"
+        src="https://rawgit.com/ganeshnrao/tt-bookmarklets/master/ttBookmarklets.js">
+</script>
+<script src="main.js"></script>
+</body>
 </html>
